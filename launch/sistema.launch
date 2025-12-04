@@ -1,0 +1,5 @@
+<launch>
+    <rosparam file="$(find sistema_integrado)/config/plano_producao.yaml" command="load" />
+
+    <node pkg="sistema_integrado" type="maestro.py" name="maestro" output="screen" />
+</launch>

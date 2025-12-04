@@ -1,0 +1,20 @@
+# config/plano_producao.yaml
+
+# 1. Locais (Coordenadas no Map Server: [x, y, yaw])
+locais:
+  C1: [0.0, 2.0, 0.0]
+  C2: [0.0, -1.0, 0.0]
+  C3: [2.0, -1.0, 0.0]
+  C4: [3.0, 1.0, 0.0] # Ponto de entrega (perto do TM)
+
+# 2. Catalogo de Pecas (Regras de negocio)
+catalogo_pecas:
+  'P1': { max_vel: 0.5, destino_tm: 'esquerda' }
+  'P2': { max_vel: 0.2, destino_tm: 'direita' } # P2 e pesada/fragil, anda devagar
+  'P3': { max_vel: 0.4, destino_tm: 'esquerda' }
+
+# 3. O Plano de Producao (Sequencia a ser cumprida)
+plano:
+  - { peca: 'P1', origem: 'C1' } # Tarefa 1
+  - { peca: 'P3', origem: 'C2' } # Tarefa 2
+  - { peca: 'P2', origem: 'C1' } # Tarefa 3
