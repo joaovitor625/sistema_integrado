@@ -2,10 +2,10 @@
 
 # 1. Locais (Coordenadas no Map Server: [x, y, yaw])
 locais:
-  C1: [0.0, 2.0, 0.0]
+  C1: [5.0, 0.9, 0.0]
   C2: [0.0, -1.0, 0.0]
-  C3: [2.0, -1.0, 0.0]
-  C4: [3.0, 1.0, 0.0] # Ponto de entrega (perto do TM)
+  C3: [1.0, 1.0, 0.0]
+  C4: [3.2, 0.9, 0.0] # Ponto de entrega (perto do TM)
 
 # 2. Catalogo de Pecas (Regras de negocio)
 catalogo_pecas:

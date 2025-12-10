@@ -1,0 +1,3 @@
+string destino   # Entrada: 'esquerda' ou 'direita'
+---
+string resultado # Saída: Mensagem de status
